@@ -1,4 +1,5 @@
-Question 1 (control structures-bonus)
+
+# Question 1 (control structures-bonus)
 This is a bonus question. Feel free to skip to the next challenge.
 
 HackerRank is written in RoR and we have various classes defined in it. Some of them are
@@ -11,14 +12,14 @@ if Hacker, output "It's a Hacker!" if Submission, output "It's a Submission!" if
 
 use case (switch statement of Ruby) use puts for printing Ruby Docs on case
 
-Question 2 (Enumerable -introduction)
+# Question 2 (Enumerable -introduction)
 In control structures tutorial, we learned about various methods to iterate over a collection like unless, loop and the most commonly used each method.
 
 Ruby, however, provides an Enumerable module which packages a bunch of methods which can be used with any other class by including it (referred to as mixing in). That means that programmers don't have to write all those methods many different times for different objects. As long as the custom object defines an each method and includes Enumerable module, it can get access to all of its magic.
 
 In this challenge, you have been provided with a custom object called colors that defines its own each method. You need to iterate over the items and return an Array containing the values.
 
-Question 3 (enumerable-each_with_index)
+# Question 3 (enumerable-each_with_index)
 In the previous challenge, we learned about each method being central to all of the methods provided by Enumerable class. One of such useful methods is each_with_index which allows you to iterate over items along with an index keeping count of the item.
 
 For example,
@@ -31,7 +32,7 @@ For example,
 
 skip_animals(['leopard', 'bear', 'fox', 'wolf'], 2) => ["2:fox", "3:wolf"] It is guaranteed that number of items in animals array is greater than the value of skip.
 
-Question 4 (enumerable-collect)
+# Question 4 (enumerable-collect)
 Beside simple methods to iterate over objects, Ruby Enumerable provides a number of important higher order constructs that we shall explore in further challenges. One of such important methods is collect method, also known as map.
 
 map as the name may suggest, takes a function and maps (applies) it to a collection of values one by one and returns the collection of result.
@@ -54,7 +55,7 @@ Why did the chicken cross the road? Gb trg gb gur bgure fvqr! On application of 
 
 Jul qvq gur puvpxra pebff gur ebnq? To get to the other side!
 
-Question 5 (enumerable-reduce)
+# Question 5 (enumerable-reduce)
 A common scenario that arises when using a collection of any sort, is to get perform a single type of operation with all the elements and collect the result.
 
 For example, a sum(array) function might wish to add all the elements passed as the array and return the result.
@@ -79,7 +80,7 @@ Other examples,
 
 (5..10).reduce(1, :) # : is shorthand for multiplication => 151200 Consider an arithmetico-geometric sequence where the term of the sequence is denoted by . In this challenge, your task is to complete the sum method which takes an integer n and returns the sum to the n terms of the series.
 
-Question 6 (enumerable 'any' 'all', 'none'and 'find')
+# Question 6 (enumerable 'any' 'all', 'none'and 'find')
 Ruby offers various enumerables on collections that check for validity of the objects within it.
 
 Consider the following example:
@@ -94,7 +95,7 @@ arr.none? {|a| a.nil?} # Checks if none of the elements in the array are of nil 
 
 arr.find {|a| a > 5} # returns the first element greater than 5 and nil if none satisfies the condition => 6 h.find {|key, value| key == "b"} # returns an Array of the first match [key, value] that satisfies the condition and nil otherwise => ["b", 2] Task Based on what you've learned above, complete the functions declared in your editor below.
 
-Question 7 (enumerable-group_by)
+# Question 7 (enumerable-group_by)
 Another function often used with data collections is one which groups the elements according to some evaluation result.
 
 Consider the following example. Let's say you have a list of 100 integers and you want to group them according to their even and odd value.
@@ -111,7 +112,7 @@ For example,
 
 marks = {"Ramesh":23, "Vivek":40, "Harsh":88, "Mohammad":60} group_by_marks(marks, 30) => {"Failed"=>[["Ramesh", 23]], "Passed"=>[["Vivek", 40], ["Harsh", 88], ["Mohammad", 60]]}
 
-Question 8 (methods-argument)
+# Question 8 (methods-argument)
 In the previous challenge, we learned to use methods to abstract similar computations into logical chunks of code that otherwise would be difficult to manage. Methods, in a way, behave like a black box. The programmer works mainly on 1) inputs, 2) expected output, and 3) how it works. We do not have to worry about method internals. In this set of tutorials, we will focus on understanding the three aspects described above.
 
 The ability to pass arguments allows complexity to be hidden from the programmer. We have already seen straightforward cases of passing several values to methods as variables, but there is much more to Ruby's methods.
@@ -126,7 +127,7 @@ prefix("Ruby", 3) # => "Rub" prefix("Ruby") # => "R" In this challenge, your tas
 
 take([1,2,3], 1) [2, 3] take([1,2,3], 2) [3] take([1,2,3]) [2, 3] Note The method can be invoked as name('Foolan', 'Barik') or, without the parentheses, as name 'Foolan', 'Barik'. The latter convention can be confusing and is not recommended.
 
-Question 9 (methods-keyword_arguments)
+# FQuestion 9 (methods-keyword_arguments)
 In our previous challenge, we explored one way to pass a variable number of arguments to our methods. While it may seem handy feature to have, except few circumstances, you are never going to use that many variables for your method. Also, if your are passing several different types of variables to the method which then will be assigned to the array, it can be difficult for the programmer invoking the method to remember the proper order for those arguments.
 
 Ruby allows you to (partially) mitigate this problem by passing a Hash as an argument or one of the arguments. For example, you have a method that takes a URI to download a file and another argument containing a Hash of other named options (proxy, timeout, active-connections etc.,)
